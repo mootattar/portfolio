@@ -29,6 +29,9 @@ export default function Hero() {
                   Who I{`'`}m ?
                 </h1>
                 <div className="max-w-2xl mx-auto">
+                  <p className="text-xl text-gray-700 font-bold">
+                    🙋‍♂️ I am Abdulrahman Al Attar.
+                  </p>
                   <p className="text-lg text-gray-700 leading-relaxed">
                     📱💻 I am a Front-end Developer who has worked on several
                     projects independently. 🌟 I am committed to continuous
