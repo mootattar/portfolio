@@ -1,12 +1,13 @@
 import facebookIcon from "../../assets/social/facebookIcon.svg";
 import linkedInIcon from "../../assets/social/linkedinIcon.svg";
 import emailIcon from "../../assets/social/emailIcon.svg";
+import { Link } from "react-router-dom";
 export default function Contact() {
   const mainImageClasses =
     "w-20 h-20 -translate-y-1 mt-1 bg-transparent translate-x-0 border border-black rounded-md p-1 px-4 shadow-[3px_3px_0_black] hover:shadow-[0_0_20px_white]  hover:-translate-y-0 hover:translate-x-1 transition-all duration-150 cursor-pointer";
 
   return (
-    <div style={{ marginTop: "150px" }} className="lvl1">
+    <div className="lvl1">
       <h1 className="text-xl font-bold text-blue-500 mb-4">
         I would be very happy if we work together! 😊
       </h1>
@@ -34,6 +35,9 @@ export default function Contact() {
         <a href="mailto:mootattar@gmail.com">
           <img className={mainImageClasses} src={emailIcon} alt="email" />
         </a>
+        <Link to="/" className="mainButton">
+          Home{`>>`}
+        </Link>
       </div>
     </div>
   );

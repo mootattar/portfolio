@@ -4,7 +4,7 @@ import MainHeader from "./components/header/MainHeader";
 import Hero from "./components/hero/Hero";
 import Projects from "./components/projects/Projects";
 import Skills from "./components/skills/Skills";
-import Contact from "./components/footer/Contact";
+import Contact from "./components/contact/Contact";
 import Tools from "./components/tools/Tools";
 
 function App() {

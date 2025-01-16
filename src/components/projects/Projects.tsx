@@ -1,6 +1,7 @@
 import Card from "./Card";
 import todoProject from "../../assets/projects/lightTodo.png";
 import ecommerceProject from "../../assets/projects/lightStore.png";
+import { Link } from "react-router-dom";
 
 export default function Projects() {
   return (
@@ -19,6 +20,9 @@ export default function Projects() {
         </svg>
       </div>
       <h1 className="text-blue-700 text-2xl font-bold">Projects Section</h1>
+      <Link to="/tools" className="mainButton">
+        Tools{`>>`}
+      </Link>
       <div className="flex items-center justify-center gap-4 w-screen flex-wrap">
         <Card
           src={todoProject}

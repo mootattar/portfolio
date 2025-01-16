@@ -2,6 +2,7 @@ import postmanIcon from "../../assets/tools/postmanIcon.svg";
 import vsCodeIcon from "../../assets/tools/vsCodeIcon.svg";
 import gptIcon from "../../assets/tools/gpticon.svg";
 import githubIcon from "../../assets/tools/githubIcon.svg";
+import { Link } from "react-router-dom";
 
 export default function Tools() {
   const mainImageClasses =
@@ -15,6 +16,9 @@ export default function Tools() {
       <a href="https://github.com/mootattar" target="_blank">
         <img className={mainImageClasses} src={githubIcon} alt="github" />
       </a>
+      <Link to="/contact" className="mainButton">
+        contact{`>>`}
+      </Link>
     </div>
   );
 }

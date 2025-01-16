@@ -1,4 +1,5 @@
-import avatar from "../../assets/other/avatar.webp";
+import { Link } from "react-router-dom";
+import avatar from "../../assets/other/avatar.png";
 export default function Hero() {
   const hobbies = [
     { icon: "📚", name: "Reading" },
@@ -41,7 +42,7 @@ export default function Hero() {
                 </div>
               </div>
 
-              <div className="space-y-4">
+              <div className="space-y-4 flex flex-col items-center justify-center">
                 <h2 className="text-2xl text-center text-gray-800">
                   My hobbies
                 </h2>
@@ -49,18 +50,24 @@ export default function Hero() {
                   {hobbies.map((hobby) => (
                     <div
                       key={hobby.name}
-                      className="px-4 py-2 text-lg bg-blue-100 hover:bg-blue-200 text-blue-800 rounded-lg"
+                      className="px-4 py-2 text-lg bg-blue-100 hover:bg-blue-200 text-black rounded-lg"
                     >
                       {hobby.icon} {hobby.name}
                     </div>
                   ))}
                 </div>
+                <Link
+                  to="/skills"
+                  style={{ justifySelf: "flex-end", alignSelf: "flex-end" }}
+                  className="mainButton"
+                >
+                  skills ={`=>>`}
+                </Link>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <hr className="my-4" />
     </>
   );
 }
